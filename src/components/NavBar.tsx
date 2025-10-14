@@ -1,5 +1,4 @@
 "use client";
-
 import { Menu, X } from "lucide-react";
 import React, { useEffect, useState } from "react";
 
@@ -16,13 +15,16 @@ const NavBar = () => {
   //     return () => window.removeEventListener("scroll", handleScroll);
   //   }, []);
 
-  const navItems = [
-    { label: "Home", href: "home" },
-    { label: "About", href: "about" },
-    { label: "Services", href: "services" },
-    { label: "Projects", href: "projects" },
-    { label: "Contact", href: "contact" },
-  ];
+  const navItems = React.useMemo(
+    () => [
+      { label: "Home", href: "home" },
+      { label: "About", href: "about" },
+      { label: "Services", href: "services" },
+      { label: "Projects", href: "projects" },
+      { label: "Contact", href: "contact" },
+    ],
+    []
+  );
 
   useEffect(() => {
     // Detect scroll background
@@ -55,7 +57,7 @@ const NavBar = () => {
         if (el) observer.unobserve(el);
       });
     };
-  }, []);
+  }, [navItems]);
 
   return (
     <nav

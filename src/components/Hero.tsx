@@ -2,9 +2,6 @@
 import Image from "next/image";
 import React from "react";
 import { Boxes } from "./ui/background-boxes";
-import { File, Search, Settings } from "lucide-react";
-
-import { OrbitingCircles } from "@/components/ui/orbiting-circles";
 
 const Hero = () => {
   return (

@@ -26,7 +26,9 @@ const transport: Transporter = nodemailer.createTransport({
   },
 });
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const resend = new Resend(process.env.RESEND_API_KEY);
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const node_env = process.env.NODE_ENV;
 
 export async function sendEmail({
