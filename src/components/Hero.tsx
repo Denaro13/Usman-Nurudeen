@@ -12,7 +12,7 @@ const Hero = () => {
       id="home"
       className="min-h-screen w-full bg-black pt-16 flex justify-center"
     >
-      <div className="relative container max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between text-white overflow-hidden rounded-lg py-4 md:py-0">
+      <div className="relative container max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-white overflow-hidden rounded-lg py-4 md:py-0">
         {/* Masked overlay (same style as Aceternity) */}
         <div className="absolute inset-0 w-full h-full bg-black z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
 
@@ -20,7 +20,7 @@ const Hero = () => {
         <Boxes />
 
         {/* Foreground Content */}
-        <div className="relative z-30 max-w-xl space-y-4 px-4 md:px-0 mt-8 md:mt-0 ">
+        <div className="relative z-30 max-w-xl space-y-4 mt-8 md:mt-0 ">
           <p className="text-xl font-medium">Hi 🖐 I’m Usman Nurudeen</p>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight">
             A Creative Software Developer
@@ -33,7 +33,6 @@ const Hero = () => {
             View My Works
           </button>
         </div>
-
         {/* Image with decoration */}
         <div className="relative z-30 mt-10 md:mt-0 h-[40rem] w-[30rem] rounded-full overflow-hidden shadow-lg">
           <Image
@@ -43,27 +42,6 @@ const Hero = () => {
             className="object-cover"
           />
         </div>
-        {/* <div className="relative h-[45rem] w-[35rem] overflow-hidden">
-          <OrbitingCircles>
-            <File />
-            <Settings />
-            <File />
-          </OrbitingCircles>
-          <div className="relative z-30 mt-10 md:mt-0 h-[40rem] w-[30rem] rounded-full overflow-hidden shadow-lg">
-            <Image
-              src="/IMG_9818.jpg"
-              alt="Usman's Image"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <OrbitingCircles radius={100} reverse>
-            <File />
-            <Settings />
-            <File />
-            <Search />
-          </OrbitingCircles>
-        </div> */}
       </div>
     </section>
   );

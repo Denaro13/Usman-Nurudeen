@@ -84,7 +84,7 @@ const Footer = () => {
           <div>
             <h4>Usman</h4>
           </div>
-          <div>2025 Usman Nurudeen, Software Developer</div>
+          <div> &copy; 2025 Usman Nurudeen, Software Developer</div>
         </div>
       </div>
     </footer>

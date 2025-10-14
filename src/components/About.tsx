@@ -9,7 +9,7 @@ import Skills from "./Skills";
 const About = () => {
   return (
     <section id="about" className="min-h-screen w-full py-16 bg-gray-100">
-      <div className="container mx-auto max-w-6xl px-4 md:px-0">
+      <div className="container mx-auto max-w-6xl px-4">
         <div className=" w-full text-center">
           <span className="text-lg border border-amber-200 px-4 py-2 rounded-full">
             Resume
@@ -17,7 +17,7 @@ const About = () => {
           <h4 className="mt-4 text-3xl font-bold">My Resume</h4>
         </div>
         <Tabs defaultValue="about-me" className="mt-6">
-          <div className="w-full overflow-x-auto">
+          <div className="w-full flex justify-center overflow-x-auto">
             <TabsList className="py-6 px-0 bg-amber-300 mx-auto rounded-full justify-between items-center ">
               <TabsTrigger
                 value="about-me"

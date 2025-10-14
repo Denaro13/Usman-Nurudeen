@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "./ui/textarea";
+import { toast } from "sonner";
 
 const formSchema = z.object({
   name: z.string().min(2).max(50),
@@ -37,17 +38,16 @@ const Contact = () => {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+    // console.log(values);
     try {
       const response = await fetch("/api/contact-us", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(values),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ data: values }),
       });
       const data = await response.json();
       console.log(data);
+      toast.success(data.message);
       form.reset();
     } catch (error) {
       console.log(error);
@@ -56,7 +56,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className=" w-full py-16 bg-gray-100">
-      <div className="container mx-auto max-w-6xl grid px-4 md:px-0 md:grid-cols-2 items-center gap-8">
+      <div className="container mx-auto max-w-6xl grid px-4 md:grid-cols-2 items-center gap-8">
         <div className="w-full flex flex-col items-center md:block ">
           <span className="text-lg border border-amber-200 px-4 py-2 rounded-full">
             Contact
@@ -221,7 +221,9 @@ const Contact = () => {
                   </FormItem>
                 )}
               />
-              <Button type="submit">Submit</Button>
+              <Button type="submit" disabled={form.formState.isSubmitting}>
+                {form.formState.isSubmitting ? "Sending..." : "Send Message"}
+              </Button>
             </form>
           </Form>
         </div>
