@@ -26,10 +26,8 @@ const transport: Transporter = nodemailer.createTransport({
   },
 });
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const resend = new Resend(process.env.RESEND_API_KEY);
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const node_env = process.env.NODE_ENV;
+// const node_env = process.env.NODE_ENV;
 
 export async function sendEmail({
   to,
@@ -43,12 +41,12 @@ export async function sendEmail({
   // console.log("node env", node_env);
 
   try {
-    // await resend.emails.send({
-    //   from: "Usman <usmannurudeen13@gmail.com>",
-    //   to,
-    //   subject,
-    //   react: body,
-    // });
+    await resend.emails.send({
+      from: "Usman <onboarding@resend.dev>",
+      to,
+      subject,
+      html: body,
+    });
     // if (node_env === "production") {
     //   await resend.emails.send({
     //     from: "Usman <usmannurudeen13@gmail.com>",
@@ -66,15 +64,15 @@ export async function sendEmail({
     //   });
     // }
 
-    console.log("Client Secret:", process.env.EMAIL_CLIENT_SECRET);
+    // console.log("Client Secret:", process.env.EMAIL_CLIENT_SECRET);
 
-    await transport.verify();
-    transport.sendMail({
-      to,
-      subject,
-      html: body,
-      from: `Message <usmannurudeen13@gmail.com>`,
-    });
+    // await transport.verify();
+    // transport.sendMail({
+    //   to,
+    //   subject,
+    //   html: body,
+    //   from: `Message <usmannurudeen13@gmail.com>`,
+    // });
   } catch (err) {
     throw new Error(`Error sending mail: ${err}`);
   }
