@@ -42,7 +42,7 @@ export async function sendEmail({
 
   try {
     await resend.emails.send({
-      from: "Usman <onboarding@resend.dev>",
+      from: "Portfolio <onboarding@resend.dev>",
       to,
       subject,
       html: body,

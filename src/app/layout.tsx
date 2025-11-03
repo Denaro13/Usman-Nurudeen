@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ScrollProgress className="top-[63px]" />
+        {/* <ScrollProgress className="top-[63px]" /> */}
         <main>{children}</main>
         <Toaster position="bottom-right" richColors />
       </body>

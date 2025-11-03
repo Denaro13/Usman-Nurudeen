@@ -41,7 +41,12 @@ const Footer = () => {
         <div className="">
           <h4 className="text-2xl font-semibold">Connect With Me</h4>
           <div className="mt-4 flex flex-col gap-2">
-            <a href="" className="flex gap-2 items-center">
+            <a
+              href="https://www.facebook.com/share/19moBSHDjz/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-2 items-center"
+            >
               <Image
                 src={"/communication.png"}
                 alt="facebook icon"
@@ -52,12 +57,19 @@ const Footer = () => {
             </a>
             <a
               href=""
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-5 h-5 bg-white rounded flex gap-2 items-center"
             >
               <Image src={"/twitter.png"} alt="x icon" width={20} height={20} />
               <span>X</span>
             </a>
-            <a href="" className="flex gap-2 items-center">
+            <a
+              href="https://www.linkedin.com/in/usman-nurudeen/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-2 items-center"
+            >
               <Image
                 src={"/linkedin.png"}
                 alt="linkedin icon"
@@ -66,7 +78,12 @@ const Footer = () => {
               />
               <span>Linkedin</span>
             </a>
-            <a href="" className="flex gap-2 items-center">
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-2 items-center"
+            >
               <Image
                 src={"/instagram.png"}
                 alt="instagram icon"
