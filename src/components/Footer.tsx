@@ -56,7 +56,7 @@ const Footer = () => {
               <span>Facebook</span>
             </a>
             <a
-              href=""
+              href="https://x.com/thecapguy_"
               target="_blank"
               rel="noopener noreferrer"
               className="w-5 h-5 bg-white rounded flex gap-2 items-center"
@@ -91,6 +91,50 @@ const Footer = () => {
                 height={20}
               />
               <span>Instagram</span>
+            </a>
+            <a
+              href="https://github.com/Denaro13"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-5 h-5 bg-white rounded flex gap-2 items-center"
+            >
+              <Image
+                src={"/github-sign.png"}
+                alt="github icon"
+                width={20}
+                height={20}
+              />
+              <span>Github</span>
+            </a>
+            <a
+              href="https://medium.com/@usmannurudeen13"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-2 items-center"
+            >
+              <Image
+                src={"/medium.png"}
+                alt="medium icon"
+                width={20}
+                height={20}
+              />
+              <span>Medium</span>
+            </a>
+            <a
+              href="https://www.youtube.com/@succeedwiththecapguy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-2 items-center"
+            >
+              <div className="bg-white h-fit w-fit rounded-full">
+                <Image
+                  src={"/youtube.png"}
+                  alt="youtube icon"
+                  width={20}
+                  height={20}
+                />
+              </div>
+              <span>YouTube</span>
             </a>
           </div>
         </div>

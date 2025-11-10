@@ -104,6 +104,14 @@ const NavBar = () => {
           >
             Blog
           </a>
+          <a
+            href={"https://www.youtube.com/@succeedwiththecapguy"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`text-lg hover:text-yellow-500 transition`}
+          >
+            YouTube
+          </a>
         </div>
       </div>
       {menuOpen && (
