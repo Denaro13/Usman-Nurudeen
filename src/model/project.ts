@@ -11,7 +11,7 @@ export interface IProject extends Document {
   techStack: string[];
   category: string;
   url: string;
-  github: string;
+  github?: string;
   createdAt: Date;
 }
 
@@ -27,7 +27,7 @@ const ProjectSchema = new Schema<IProject>(
     techStack: { type: [String], required: true },
     category: { type: String, required: true },
     url: { type: String, required: true },
-    github: { type: String, required: true },
+    github: { type: String },
   },
   { timestamps: true }
 );

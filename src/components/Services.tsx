@@ -1,4 +1,5 @@
 import {
+  Bot,
   Brain,
   Code2,
   Database,
@@ -12,32 +13,37 @@ const services = [
   {
     title: "Full-Stack Development",
     icon: <Code2 className="w-6 h-6 text-yellow-500" />,
-    desc: "Building high-performance web apps with modern frameworks — from responsive UIs to scalable backends.",
+    desc: "Developing high-performance web applications using modern frameworks — from responsive, intuitive UIs to secure, scalable backends.",
   },
   {
-    title: "Frontend & UI/UX",
+    title: "Frontend & UI/UX Design",
     icon: <Layout className="w-6 h-6 text-pink-500" />,
-    desc: "Crafting sleek, user-focused interfaces using React, Next.js, TailwindCSS, and design best practices.",
+    desc: "Designing visually stunning and user-centered interfaces with React, Next.js, and Tailwind CSS — blending aesthetics with seamless usability.",
   },
   {
     title: "Backend Engineering",
     icon: <Database className="w-6 h-6 text-green-500" />,
-    desc: "Designing APIs, managing databases, and optimizing system performance with Node.js, Express, and Laravel.",
+    desc: "Architecting robust APIs, managing data workflows, and enhancing performance with Node.js, Express, and Laravel.",
   },
   {
-    title: "AI & LLM Training",
+    title: "AI & LLM Development",
     icon: <Brain className="w-6 h-6 text-blue-500" />,
-    desc: "Creating mathematical datasets, fine-tuning models, and improving AI reasoning through structured training.",
+    desc: "Building and fine-tuning large language models with custom mathematical datasets to improve accuracy, reasoning, and performance.",
   },
   {
-    title: "EdTech Solutions",
+    title: "AI Automation",
+    icon: <Bot className="w-6 h-6 text-cyan-500" />,
+    desc: "Automating workflows and content creation using AI tools and APIs — integrating GPT, Zapier, and custom scripts to boost productivity and innovation.",
+  },
+  {
+    title: "EdTech Innovation",
     icon: <GraduationCap className="w-6 h-6 text-orange-500" />,
-    desc: "Founder of PiPoint Edtech — bridging education and technology to make learning smarter and more accessible.",
+    desc: "Currently building PiPoint — an EdTech startup revolutionizing how learners engage with technology-driven education.",
   },
   {
     title: "Mentorship & Tutoring",
     icon: <Users className="w-6 h-6 text-purple-500" />,
-    desc: "Over 6 years of experience teaching coding and mathematics, mentoring learners at all levels.",
+    desc: "Over 6 years of experience teaching Mathematics and Programming — mentoring learners and helping them master complex concepts with clarity.",
   },
 ];
 

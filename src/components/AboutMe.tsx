@@ -12,13 +12,22 @@ const AboutMe = () => {
           <h4 className="text-4xl font-bold">
             <FlipWords words={words} /> Developer
           </h4>
-          <p className="text-lg whitespace-pre-wrap">
+          {/* <p className="text-lg whitespace-pre-wrap">
             Hello 👋, I’m Usman Nurudeen, a creative developer, educator, and
             founder of <strong>PiPoint Edtech</strong> - a platform empowering
             learners through innovation. I love turning bold ideas into seamless
             digital experiences, blending code, design, and creativity to craft
             products that don’t just work, they wow. Let’s collaborate and bring
             your vision to life!
+          </p> */}
+          <p className="text-lg whitespace-pre-wrap">
+            Hello 👋, I’m Usman Nurudeen — a creative developer, educator, and
+            founder currently building <strong>PiPoint</strong>, an EdTech
+            startup dedicated to empowering learners through innovation. I’m
+            passionate about transforming bold ideas into seamless digital
+            experiences — blending code, design, and creativity to craft
+            products that inspire, engage, and deliver real impact. Let’s
+            connect and bring your vision to life!
           </p>
           <div className="mt-8 grid grid-cols-[120px_1fr] gap-y-3">
             <p className="font-medium">Name</p>

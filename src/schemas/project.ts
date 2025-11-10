@@ -7,7 +7,7 @@ export const ProjectSchema = z.object({
   techStack: z.array(z.string().min(1, "Tech stack item cannot be empty")),
   category: z.string().min(2, "Category is required"),
   url: z.string().min(1, "Project URL is required"),
-  github: z.string().min(1, "GitHub URL is required"),
+  github: z.string().optional(),
 });
 
 export type ProjectData = z.infer<typeof ProjectSchema>;

@@ -9,16 +9,16 @@ import { getProjects } from "@/lib/api/project";
 import { toast } from "sonner";
 import { Project } from "@/lib/types";
 
-interface ProjectSample {
-  title: string;
-  desc: string;
-  details: string;
-  img: string;
-  tech: string[];
-  category: string;
-  link?: string;
-  github?: string;
-}
+// interface ProjectSample {
+//   title: string;
+//   desc: string;
+//   details: string;
+//   img: string;
+//   tech: string[];
+//   category: string;
+//   link?: string;
+//   github?: string;
+// }
 
 const sampleProjects = [
   {
@@ -134,7 +134,7 @@ const Page = () => {
             >
               <div className="container max-w-6xl relative z-10 mx-auto px-4">
                 {/* Filter Buttons */}
-                <div className="flex justify-center gap-4 mb-12 flex-wrap">
+                {/* <div className="flex justify-center gap-4 mb-12 flex-wrap">
                   {["All", "Fullstack", "AI", "Edtech"].map((cat) => (
                     <button
                       key={cat}
@@ -149,7 +149,7 @@ const Page = () => {
                       {cat}
                     </button>
                   ))}
-                </div>
+                </div> */}
 
                 {/* Projects Grid */}
                 <motion.div

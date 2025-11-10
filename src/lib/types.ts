@@ -26,7 +26,7 @@ export interface Project {
   techStack: string[];
   category: string;
   url: string;
-  github: string;
+  github?: string;
   image: {
     url: string | null;
     publicId: string | null;

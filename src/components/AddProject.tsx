@@ -35,7 +35,7 @@ interface ProjectFormData {
   techStack: string;
   category: string;
   url: string;
-  github: string;
+  github?: string;
 }
 
 export function AddProject({
@@ -249,7 +249,7 @@ export function AddProject({
                 <FormField
                   control={control}
                   name="github"
-                  rules={{ required: "GitHub link is required" }}
+                  // rules={{ required: "GitHub link is required" }}
                   render={({ field }) => (
                     <FormItem>
                       <Label>GitHub Link</Label>
